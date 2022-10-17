@@ -1,0 +1,10 @@
+.cardStyle {
+    width: 350px;
+    margin: 10px;
+}
+
+.cardStyle img{
+    display: flex;
+    
+    width: 100px;
+}
