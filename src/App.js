@@ -6,6 +6,14 @@ import { BoxColor } from './Components/BoxColor';
 import { CreditCard } from './Components/CreditCard';
 import { Rating } from './Components/Rating';
 import {DriverCard} from './Components/DriverCard'
+import { LikeButton } from './Components/LikeButton';
+import { ClickablePicture } from './Components/ClickablePicture';
+import imgGlasses from './assets/images/maxence-glasses.png'
+import imgNoGlasses from './assets/images/maxence.png'
+import { Dice } from './Components/Dice';
+import { Carousel } from './Components/Carousel';
+import { NumbersTable } from './Components/NumbersTable';
+import { Facebook } from './Components/Facebook';
 
 function App() {
   return (
@@ -91,6 +99,29 @@ function App() {
           licensePlate: "BE33ER"
         }}
       />
+      <div>
+        <LikeButton/>
+      </div>
+      <div>
+        <ClickablePicture imgGlasses={imgGlasses} imgNoGlasses={imgNoGlasses}/>
+      </div>
+      <div>
+        <Dice/>
+      </div>
+      <div>
+        <Carousel images={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}/>
+      </div>
+      <div>
+        <NumbersTable limit={12}/>
+      </div>
+      <div>
+        <Facebook/>
+      </div>
     </div>
   );
 }
